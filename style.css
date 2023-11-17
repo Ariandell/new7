@@ -1,0 +1,102 @@
+#MegaBlock {
+    width: 500px;
+    height: 100px;
+    color: aliceblue;
+    border: 2px solid #1a1818;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    background-image: url(./img/12.jpg);
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    transition: 2s;
+}
+
+#sphere-container {
+    transition: 2s;
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#sphere {
+    transition: 2s;
+    width: 700px;
+    height: 700px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: transform 3s;
+
+}
+
+#question {
+border-radius: 10px;
+text-align: center;
+border: none;
+transition: 2s;
+}
+#question:hover{
+    background-color: rgb(76, 130, 230);
+} 
+button {
+    border: none;
+    border-radius: 10px;
+    transition: 2s;
+    }
+button:hover{
+    transform: scale(1.5, 1.5) ;
+    background-color: rgb(76, 130, 230);
+} 
+#sphere img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+#answer {
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+    color: #000;
+    font-size: 15px;
+}
+@media only screen and (max-width: 768px) {
+    #MegaBlock {
+        width: 70%;
+        margin: 10px;
+        font-size: 12px;
+    }
+
+    #sphere-container {
+        top: 66%;
+        font-size: 12px;
+        
+    }
+
+    #question {
+        width: 30%;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #MegaBlock {
+        width: 60%;
+        font-size: 10px;
+    }
+
+    #sphere-container {
+        top: 66%;
+    }
+
+    #question {
+        width: 50%;
+    }
+}
