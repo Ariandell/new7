@@ -20,7 +20,7 @@ h1.textContent = 'Безкоштовна магічна Куля';
 
 const quest = document.createElement('input');
 quest.setAttribute('type', 'text');
-quest.setAttribute('placeholder', 'Вопроси?');
+quest.setAttribute('placeholder', 'Ваші питанння?');
 quest.id = 'question';
 const sphereContainer = document.createElement('div');
 sphereContainer.id = 'sphere-container';
